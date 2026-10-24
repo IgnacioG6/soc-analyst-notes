@@ -1,14 +1,14 @@
 # Comandos de red en Ubuntu
 
 ## ip a
-- **Para qué sirve:** Muestra todas las interfaces de red del sistema junto con sus direcciones IP (IPv4 e IPv6), direcciones físicas MAC, estado del enlace (UP/DOWN) y la máscara de subred. Es el comando nativo moderno en Linux (que reemplaza al antiguo `ifconfig`).
+- **Para qué sirve:** Muestra todas las interfaces de red del sistema junto con sus direcciones IP, direcciones físicas MAC, estado del enlace y la máscara de subred. Es el comando nativo moderno en Linux (que reemplaza al antiguo `ifconfig`).
 - **Qué mostró en mi equipo:** Listó las interfaces activas (como `lo` para loopback y `eth0`/`wlan0` para red física/Wi-Fi), especificando el estado de conexión (`state UP`), la dirección IP asignada (`inet 192.168.x.x/24`) y la MAC física (`link/ether xx:xx:xx:xx:xx:xx`).
 - **Capa relacionada:** Capa 3 (Red - Dirección IP) y Capa 2 (Enlace de datos - Dirección MAC).
 
 ---
 
 ## ip route
-- **Para qué sirve:** Muestra la tabla de enrutamiento del sistema operativo. Permite identificar la puerta de enlace predeterminada (*Default Gateway*), las rutas hacia subredes locales y los saltos que utilizará el tráfico saliente.
+- **Para qué sirve:** Muestra la tabla de enrutamiento del sistema operativo. Permite identificar la puerta de enlace predeterminada, las rutas hacia subredes locales y los saltos que utilizará el tráfico saliente.
 - **Qué mostró en mi equipo:** La ruta predeterminada (`default via 192.168.x.1 dev eth0`) que redirige todo el tráfico hacia el router, así como el rango de red local asignado a la interfaz.
 - **Capa relacionada:** Capa 3 (Red - Enrutamiento e IP).
 
